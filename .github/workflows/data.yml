@@ -55,6 +55,7 @@ jobs:
           title: BOT; UPDATE DATA to staging
           base: staging
           branch: data-bot/staging
+          labels: auto_merge
       - name: Check outputs
         run: |
           echo "Pull Request Number - ${{ env.PULL_REQUEST_NUMBER }}"

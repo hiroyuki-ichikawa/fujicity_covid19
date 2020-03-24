@@ -3,7 +3,7 @@ name: data deploy
 on:
   push:
     branches:
-      - deploy/resources
+      - not_deploy/resources  #一旦停止
 
 jobs:
   pr-development:

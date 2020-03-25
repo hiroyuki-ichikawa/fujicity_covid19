@@ -3,7 +3,7 @@ name: data deploy
 on:
   push:
     branches:
-      - deploy/resources
+      - not_deploy/resources
 
 jobs:
   pr-development:

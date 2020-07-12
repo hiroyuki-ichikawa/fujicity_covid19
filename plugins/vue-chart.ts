@@ -49,7 +49,14 @@ const createCustomChart = () => {
         }
       },
       watch: {
-        displayLegends: watchDisplayLegends
+        displayLegends: watchDisplayLegends,
+        width(newWidth) {
+          setTimeout(() => {
+            this.$data._chart.resize()
+            const canvas = this.$refs.canvas as HTMLCanvasElement
+            canvas.parentElement!.parentElement!.parentElement!.scrollLeft! = newWidth
+          })
+        }
       },
       mounted(): void {
         this.renderChart(this.chartData, this.options)
@@ -73,7 +80,14 @@ const createCustomChart = () => {
         }
       },
       watch: {
-        displayLegends: watchDisplayLegends
+        displayLegends: watchDisplayLegends,
+        width(newWidth) {
+          setTimeout(() => {
+            this.$data._chart.resize()
+            const canvas = this.$refs.canvas as HTMLCanvasElement
+            canvas.parentElement!.parentElement!.parentElement!.scrollLeft! = newWidth
+          })
+        }
       },
       mounted(): void {
         setTimeout(() => {
@@ -99,7 +113,14 @@ const createCustomChart = () => {
         }
       },
       watch: {
-        displayLegends: watchDisplayLegends
+        displayLegends: watchDisplayLegends,
+        width(newWidth) {
+          setTimeout(() => {
+            this.$data._chart.resize()
+            const canvas = this.$refs.canvas as HTMLCanvasElement
+            canvas.parentElement!.parentElement!.parentElement!.scrollLeft! = newWidth
+          })
+        }
       },
       mounted(): void {
         this.renderChart(this.chartData, this.options)

@@ -106,9 +106,9 @@ import { Chart } from 'chart.js'
 import DataView from '@/components/DataView.vue'
 import DataSelector from '@/components/DataSelector.vue'
 import DataViewBasicInfoPanel from '@/components/DataViewBasicInfoPanel.vue'
+import OpenDataLink from '@/components/OpenDataLink.vue'
 import { DisplayData, yAxesBgPlugin, scrollPlugin } from '@/plugins/vue-chart'
 import { getGraphSeriesStyle, SurfaceStyle } from '@/utils/colors'
-import OpenDataLink from '@/components/OpenDataLink.vue'
 
 interface HTMLElementEvent<T extends HTMLElement> extends MouseEvent {
   currentTarget: T
@@ -160,6 +160,7 @@ type Props = {
   dataLabels: string[] | TranslateResult[]
   unit: string
   initialCumulative: number
+  url: string
   scrollPlugin: Chart.PluginServiceRegistrationOptions[]
   yAxesBgPlugin: Chart.PluginServiceRegistrationOptions[]
 }
@@ -218,6 +219,10 @@ const options: ThisTypedComponentOptionsWithRecordProps<
     initialCumulative: {
       type: Number,
       default: 0
+    },
+    url: {
+      type: String,
+      default: ''
     },
     scrollPlugin: {
       type: Array,

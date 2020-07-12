@@ -216,7 +216,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
                 return d.transition
               }),
               backgroundColor: color,
-              borderWidth: 0
+              borderWidth: 0.3
             }
           ]
         }
@@ -230,7 +230,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
               return d.cumulative
             }),
             backgroundColor: color,
-            borderWidth: 0
+            borderWidth: 0.3
           }
         ]
       }

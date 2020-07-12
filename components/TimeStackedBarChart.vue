@@ -270,7 +270,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
               data: item,
               backgroundColor: graphSeries[index].fillColor,
               borderColor: graphSeries[index].strokeColor,
-              borderWidth: 1
+              borderWidth: 0.3
             }
           })
         }
@@ -283,7 +283,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
             data: this.cumulative(item),
             backgroundColor: graphSeries[index].fillColor,
             borderColor: graphSeries[index].strokeColor,
-            borderWidth: 1
+            borderWidth: 0.3
           }
         })
       }

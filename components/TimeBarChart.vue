@@ -216,7 +216,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
                 return d.transition
               }),
               backgroundColor: color,
-              borderWidth: 0.3
+              borderWidth: { left: 0, top: 1, right: 0, bottom: 0 }
             }
           ]
         }
@@ -230,7 +230,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
               return d.cumulative
             }),
             backgroundColor: color,
-            borderWidth: 0.3
+            borderWidth: { left: 0, top: 1, right: 0, bottom: 0 }
           }
         ]
       }
@@ -333,7 +333,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
             {
               data: [Math.max(...this.chartData.map(d => d.transition))],
               backgroundColor: 'transparent',
-              borderWidth: 0
+              borderWidth: { left: 0, top: 1, right: 0, bottom: 0 }
             }
           ]
         }
@@ -344,7 +344,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
           {
             data: [Math.max(...this.chartData.map(d => d.cumulative))],
             backgroundColor: 'transparent',
-            borderWidth: 0
+            borderWidth: { left: 0, top: 1, right: 0, bottom: 0 }
           }
         ]
       }

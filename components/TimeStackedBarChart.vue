@@ -270,7 +270,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
               data: item,
               backgroundColor: graphSeries[index].fillColor,
               borderColor: graphSeries[index].strokeColor,
-              borderWidth: 0.3
+              borderWidth: { left: 0, top: 1, right: 0, bottom: 0 }
             }
           })
         }
@@ -283,7 +283,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
             data: this.cumulative(item),
             backgroundColor: graphSeries[index].fillColor,
             borderColor: graphSeries[index].strokeColor,
-            borderWidth: 0.3
+            borderWidth: { left: 0, top: 1, right: 0, bottom: 0 }
           }
         })
       }
@@ -404,6 +404,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
               },
               ticks: {
                 suggestedMin: 0,
+                suggestedMax: this.scaledTicksYAxisMax,
                 maxTicksLimit: 8,
                 fontColor: '#808080'
               }
@@ -449,7 +450,6 @@ const options: ThisTypedComponentOptionsWithRecordProps<
       }
     },
     displayOptionHeader() {
-      const scaledTicksYAxisMax = this.scaledTicksYAxisMax
       const options: Chart.ChartOptions = {
         responsive: false,
         maintainAspectRatio: false,
@@ -525,9 +525,9 @@ const options: ThisTypedComponentOptionsWithRecordProps<
               },
               ticks: {
                 suggestedMin: 0,
+                suggestedMax: this.scaledTicksYAxisMax,
                 maxTicksLimit: 8,
-                fontColor: '#808080', // #808080
-                suggestedMax: scaledTicksYAxisMax
+                fontColor: '#808080' // #808080
               }
             }
           ]

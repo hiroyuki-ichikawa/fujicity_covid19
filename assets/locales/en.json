@@ -157,5 +157,13 @@
   "Twitterで{title}のグラフをシェア": "Share the graph of {title} with Twitter",
   "facebookで{title}のグラフをシェア": "Share the graph of {title} with Facebook",
   "日付": "Date",
-  "不明": "unknown"
+  "不明": "unknown",
+  "西部保健所管内": "Jurisdiction in the West Health Center",
+  "東部保健所管内": "Jurisdiction in the East Health Center",
+  "中部保健所管内": "Jurisdiction in the Central Health Center",
+  "県外": "Outside the prefecture",
+  "静岡県からの大切なお願い": "An Important Request from Shizuoka Prefecture",
+  "新型コロナウイルス感染症の相談": "Consultation for novel coronavirus infection",
+  "医療機関等": "Medical institutions etc",
+  "地方衛生研究所": "Shizuoka Institute of Environment and Hygiene"
 }

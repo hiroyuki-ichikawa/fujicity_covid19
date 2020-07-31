@@ -111,10 +111,6 @@ export default Vue.extend({
       type: Number,
       required: true
     },
-    自宅療養: {
-      type: Number,
-      required: true
-    },
     調査中: {
       type: Number,
       required: true

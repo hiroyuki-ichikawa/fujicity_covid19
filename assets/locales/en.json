@@ -1,4 +1,4 @@
-{
+﻿{
   "新型コロナウイルス感染症が心配なときに": "If you feel concerned about COVID-19",
   "静岡県内の最新感染動向": "Latest updates on COVID-19 in Shizuoka",
   "県内の最新感染動向": "Latest updates on COVID-19 in Shizuoka",
@@ -42,6 +42,13 @@
   "西伊豆町": "Nishiizu-cho",
   "榛原郡": "Haibara-gun",
   "浜松市": "Hamamatsu-shi",
+  "浜松市中区": "Hamamatsu-shi Naka-ku",
+  "浜松市東区": "Hamamatsu-shi Higashi-ku",
+  "浜松市西区": "Hamamatsu-shi Nishi-ku",
+  "浜松市南区": "Hamamatsu-shi Minami-ku",
+  "浜松市北区": "Hamamatsu-shi Kita-ku",
+  "浜松市浜北区": "Hamamatsu-shi Hamakita-ku",
+  "浜松市天竜区": "Hamamatsu-shi Tenryu-ku",  
   "東伊豆町": "Higashiizu-cho",
   "袋井市": "Fukuroi-shi",
   "藤枝市": "FUjieda-shi",

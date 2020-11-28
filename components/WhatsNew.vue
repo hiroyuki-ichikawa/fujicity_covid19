@@ -7,6 +7,11 @@
       {{ $t('最新のお知らせ') }}
     </h3>
     <ul class="WhatsNew-list">
+      <li class="WhatsNew-list-item WhatsNew-list-item-message">
+        <span class="WhatsNew-list-item-message-warning"
+          >本ページの数値は、公表済みの数値をベースとしているため、実際の入院患者数等とは異なる場合があります</span
+        >
+      </li>
       <li v-for="(item, i) in items" :key="i" class="WhatsNew-list-item">
         <a
           class="WhatsNew-list-item-anchor"
@@ -86,6 +91,34 @@ export default Vue.extend({
   list-style-type: none;
 
   &-item {
+    &-message {
+      display: inline-block;
+      text-decoration: none;
+      margin: 5px;
+      font-size: 14px;
+
+      @include lessThan($medium) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      &-time {
+        flex: 0 0 90px;
+
+        @include lessThan($medium) {
+          flex: 0 0 100%;
+        }
+
+        color: $gray-1;
+      }
+
+      &-warning {
+        flex: 0 1 auto;
+        padding-left: 8px;
+        color: $red-1;
+      }
+    }
+
     &-anchor {
       display: inline-block;
       text-decoration: none;

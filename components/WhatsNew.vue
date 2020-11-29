@@ -8,7 +8,9 @@
     </h3>
     <ul class="WhatsNew-list">
       <li class="WhatsNew-list-item WhatsNew-list-item-message">
-        <span class="WhatsNew-list-item-message-warning">{{ $t('本ページの数値は、公表済みの数値をベースとしているため、実際の入院患者数等とは異なる場合があります') }}</span>
+        <span class="WhatsNew-list-item-message-warning">{{ $t(
+		'本ページの数値は、公表済みの数値をベースとしているため、実際の入院患者数等とは異なる場合があります'
+		) }}</span>
       </li>
       <li v-for="(item, i) in items" :key="i" class="WhatsNew-list-item">
         <a

@@ -18,7 +18,7 @@
     </li>
     <li :class="[$style.box, $style.tall, $style.parent, $style.cases]">
       <div :class="$style.title">
-        {{ $t('検査実施件数') }}
+        {{ $t('検体採取実施人数') }}
         ({{ $t('累計') }})
       </div>
       <div :class="$style.pillar">

@@ -129,6 +129,8 @@
   "オープンデータを入手": " Get Open Data",
   "埋め込み用コード": " Embed Code",
   "埋め込み用コードをコピーしました": " Copied the embed code",
+  "1ページ当たり": "Items per page",
+  "{itemsLength} 項目中 {pageStart} - {pageStop} ": "{pageStart} - {pageStop} of {itemsLength} indexes ",
   "静岡県": "Shizuoka Prefecture",
   "新型コロナウイルス感染症": " COVID-19",
   "menu/新型コロナウイルス感染症": "Shizuoka COVID-19 Information",

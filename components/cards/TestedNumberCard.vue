@@ -32,7 +32,7 @@ export default {
     ]
     const inspectionsItems = [
       this.$t('保健所が行政検査として行った検体採取人数'),
-      this.$t('医療機関などが行政検査として行った検体採取人数')
+      this.$t('医療機関等が行政検査として行った検体採取人数')
     ]
     const inspectionsLabels = Data.inspections_summary.labels
     const inspectionsDataLabels = [

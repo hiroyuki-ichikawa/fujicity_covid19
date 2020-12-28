@@ -1,7 +1,6 @@
 <template>
   <data-view :title="title" :title-id="titleId" :date="date">
-    <template v-slot:button>
-    </template>
+    <template v-slot:button />
     <slot />
   </data-view>
 </template>

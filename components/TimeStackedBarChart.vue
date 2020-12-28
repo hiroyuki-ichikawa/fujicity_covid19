@@ -3,11 +3,7 @@
     <template v-slot:button>
       <ul :class="$style.GraphDesc">
         <li>
-          {{
-            $t(
-              '（注）検体を採取した日を基準とする'
-            )
-          }}
+          {{ $t('（注）検体を採取した日を基準とする') }}
         </li>
         <li>
           {{

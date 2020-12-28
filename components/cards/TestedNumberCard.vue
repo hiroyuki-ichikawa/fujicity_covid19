@@ -31,13 +31,21 @@ export default {
       Data.inspections_summary.data['医療機関等']
     ]
     const inspectionsItems = [
-      this.$t('保健所が行政検査として行った検体採取人数'),
-      this.$t('医療機関等が行政検査として行った検体採取人数')
+      this.$t(
+	'保健所が行政検査として行った検体採取人数'
+	),
+      this.$t(
+	'医療機関等が行政検査として行った検体採取人数'
+	)
     ]
     const inspectionsLabels = Data.inspections_summary.labels
     const inspectionsDataLabels = [
-      this.$t('保健所'),
-      this.$t('医療機関等')
+      this.$t(
+	'保健所'
+	),
+      this.$t(
+	'医療機関等'
+	)
     ]
     const inspectionsInitialCumulative =
       Data.inspections_summary.initial_cumulative.count

@@ -7,15 +7,43 @@
       :ref="'displayedTable'"
       :headers="chartData.headers"
       :items="chartData.datasets"
-      :items-per-page="-1"
-      :hide-default-footer="true"
       :height="240"
-      :fixed-header="true"
+      fixed-header
       :mobile-breakpoint="0"
+      :custom-sort="customSort"
+      :footer-props="{
+        'items-per-page-options': [15, 30, 50, 100, 200, 300, -1],
+        'items-per-page-text': $t('1ページ当たり')
+      }"
       class="cardTable"
-    />
+    >
+      <template v-slot:body="{ items }">
+        <tbody>
+          <tr v-for="item in items" :key="item.text">
+            <th class="text-start">{{ item['公表日'] }}</th>
+            <th class="text-start">{{ item['居住地'] }}</th>
+            <th class="text-start">{{ item['年代'] }}</th>
+            <th class="text-start">{{ item['性別'] }}</th>
+            <th class="text-center">{{ item['退院'] }}</th>
+          </tr>
+        </tbody>
+      </template>
+      <template slot="footer.page-text" slot-scope="props">
+        {{
+          $t('{itemsLength} 項目中 {pageStart} - {pageStop} ', {
+            itemsLength: props.itemsLength,
+            pageStart: props.pageStart,
+            pageStop: props.pageStop
+          })
+        }}
+      </template>
+    </v-data-table>
     <div class="note">
-      {{ $t('※退院には、死亡退院を含む') }}
+      <ul>
+        <li>
+          {{ $t('※退院には、死亡退院を含む') }}
+        </li>
+      </ul>
     </div>
     <template v-slot:infoPanel>
       <data-view-basic-info-panel
@@ -37,7 +65,6 @@
       padding: 8px 10px;
       height: auto;
       border-bottom: 1px solid $gray-4;
-      white-space: nowrap;
       color: $gray-2;
       font-size: 12px;
 
@@ -50,6 +77,9 @@
       tr {
         color: $gray-1;
 
+        th {
+          font-weight: normal;
+        }
         td {
           padding: 8px 10px;
           height: auto;
@@ -61,21 +91,32 @@
         }
 
         &:nth-child(odd) {
+          th,
           td {
             background: rgba($gray-4, 0.3);
           }
         }
-
-        &:not(:last-child) {
-          td:not(.v-data-table__mobile-row) {
-            border: none;
-          }
-        }
       }
+    }
+    .v-select {
+      margin-left: 10px;
     }
     &:focus {
       outline: dotted $gray-3 1px;
     }
+  }
+  .v-data-table__wrapper {
+    box-shadow: 0 -20px 12px -12px #0003 inset;
+  }
+  .v-data-footer {
+    @include font-size(12);
+    &__pagination {
+      margin-left: 0;
+      margin-right: 5px;
+    }
+  }
+  .v-data-footer__select .v-select__selections .v-select__selection--commma {
+    font-size: 1.2rem;
   }
 }
 
@@ -83,6 +124,21 @@
   padding: 8px;
   font-size: 12px;
   color: $gray-3;
+
+  ul,
+  ol {
+    list-style-type: none;
+    padding: 0;
+  }
+}
+.v-menu__content {
+  width: 60px;
+  .v-list-item {
+    padding: 0 8px;
+  }
+}
+.v-list-item__title {
+  font-size: 1.5rem;
 }
 </style>
 
@@ -118,6 +174,27 @@ export default Vue.extend({
     url: {
       type: String,
       default: ''
+    },
+    customSort: {
+      type: Function,
+      default(items: Object[], index: string[], isDesc: boolean[]) {
+        items.sort((a: any, b: any) => {
+          let comparison = 0
+          if (String(a[index[0]]) < String(b[index[0]])) {
+            comparison = -1
+          } else if (String(b[index[0]]) < String(a[index[0]])) {
+            comparison = 1
+          }
+          // a と b が等しい場合は上記のif文を両方とも通過するので 0 のままとなる
+
+          // 降順指定の場合は符号を反転
+          if (comparison !== 0) {
+            comparison = isDesc[0] ? comparison * -1 : comparison
+          }
+          return comparison
+        })
+        return items
+      }
     }
   },
   mounted() {

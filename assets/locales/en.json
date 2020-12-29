@@ -5,7 +5,7 @@
   "検査陽性者の状況": "Details of people testing positive",
   "陽性患者数": "Number of confirmed cases",
   "陽性患者の属性": "Details of patients testing positive",
-  "検体採取実施人数": "Number of people tested",
+  "検査（検体採取）実施人数": "Number of people tested ( people who sample collected )",
   "新型コロナ受診相談窓口相談件数": "Number of calls to the Novel Coronavirus Hotline",
   "{date}の累計": " Cumulative total as of {date}",
   "人": " persons",

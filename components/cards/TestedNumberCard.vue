@@ -1,14 +1,14 @@
 <template>
   <v-col cols="12" md="6" class="DataCard">
     <time-stacked-bar-chart
-      :title="$t('検体採取実施人数')"
+      :title="$t('検査（検体採取）実施人数')"
       :title-id="'number-of-tested'"
       :chart-id="'time-stacked-bar-chart-inspections'"
       :chart-data="inspectionsGraph"
       :date="Data.inspections_summary.date"
       :items="inspectionsItems"
       :labels="inspectionsLabels"
-      :unit="$t('件.tested')"
+      :unit="$t('人')"
       :data-labels="inspectionsDataLabels"
       :initial-cumulative="inspectionsInitialCumulative"
       :url="'https://opendata.pref.shizuoka.jp/dataset/8167.html'"

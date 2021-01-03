@@ -125,7 +125,6 @@ const config: Configuration = {
         mapboxgl: 'mapbox-gl'
       })
     ],
-    extractCSS: true,
     postcss: {
       plugins: [
         autoprefixer({ grid: 'autoplace' }),

@@ -26023,37 +26023,37 @@
 		"children": [
 			{
 				"attr": "陽性患者数",
-				"value": 2606,
+				"value": 2794,
 				"children": [
 					{
 						"attr": "入院中",
-						"value": 180,
+						"value": 171,
 						"children": [
 							{
 								"attr": "軽症・中等症",
-								"value": 171
+								"value": 164
 							},
 							{
 								"attr": "重症",
-								"value": 9
+								"value": 7
 							}
 						]
 					},
 					{
 						"attr": "宿泊療養",
-						"value": 46
+						"value": 50
 					},
 					{
 						"attr": "入院・療養等調整中",
-						"value": 201
+						"value": 305
 					},
 					{
 						"attr": "死亡",
-						"value": 40
+						"value": 41
 					},
 					{
 						"attr": "退院",
-						"value": 2139
+						"value": 2227
 					}
 				]
 			}

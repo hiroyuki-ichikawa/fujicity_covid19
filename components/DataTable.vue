@@ -138,7 +138,7 @@
   }
 }
 .v-list-item__title {
-  font-size: 1.0rem;
+  font-size: 1rem;
 }
 </style>
 

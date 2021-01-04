@@ -21,10 +21,10 @@
         <tbody>
           <tr v-for="item in items" :key="item.text">
             <th class="text-start">{{ item['公表日'] }}</th>
-            <th class="text-start">{{ item['居住地'] }}</th>
-            <th class="text-start">{{ item['年代'] }}</th>
-            <th class="text-start">{{ item['性別'] }}</th>
-            <th class="text-center">{{ item['退院'] }}</th>
+            <td class="text-start">{{ item['居住地'] }}</td>
+            <td class="text-start">{{ item['年代'] }}</td>
+            <td class="text-start">{{ item['性別'] }}</td>
+            <td class="text-center">{{ item['退院'] }}</td>
           </tr>
         </tbody>
       </template>
@@ -115,7 +115,7 @@
       margin-right: 5px;
     }
   }
-  .v-data-footer__select .v-select__selections .v-select__selection--commma {
+  .v-data-footer__select .v-select__selections .v-select__selection--comma {
     font-size: 1.2rem;
   }
 }
@@ -132,13 +132,13 @@
   }
 }
 .v-menu__content {
-  width: 60px;
+  width: 80px;
   .v-list-item {
     padding: 0 8px;
   }
 }
 .v-list-item__title {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 </style>
 

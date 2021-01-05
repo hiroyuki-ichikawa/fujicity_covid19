@@ -116,7 +116,7 @@
     }
   }
   .v-data-footer__select .v-select__selections .v-select__selection--comma {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 

@@ -17,3 +17,5 @@ RUN yarn generate:deploy
 FROM nginx:1.19-alpine
 
 COPY --from=builder /app/dist /usr/share/nginx/html
+
+CMD ["nginx", "-g", "daemon off;"]

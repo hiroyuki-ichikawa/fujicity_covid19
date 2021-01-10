@@ -256,7 +256,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
         lText: (
           this.sum(this.cumulativeSum(this.chartData)) + this.initialCumulative
         ).toLocaleString(),
-        sText: `${this.$t('{date}までの累計（内{offset}件は4/26までの累計）', {
+        sText: `${this.$t('{date}までの累計（内{offset}人は4/26までの累計）', {
           date: this.labels[this.labels.length - 1].replace(/^0/, ''),
           offset: this.initialCumulative.toLocaleString()
         })}`,

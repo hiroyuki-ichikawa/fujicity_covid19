@@ -125,7 +125,7 @@
   "※退院には、死亡退院を含む": "* The discharged includes deaths",
   "{date} 更新": " Last update: {date}",
   "{date}の合計": " Total of {date}",
-  "{date}までの累計（内{offset}件は4/26までの累計）": "Cumultive up to {date}（{offset} of them are cumulative until 4/26）",
+  "{date}までの累計（内{offset}人は4/26までの累計）": "Cumultive up to {date}（{offset} of them are cumulative until 4/26）",
   "オープンデータを入手": " Get Open Data",
   "埋め込み用コード": " Embed Code",
   "埋め込み用コードをコピーしました": " Copied the embed code",

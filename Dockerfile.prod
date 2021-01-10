@@ -1,0 +1,21 @@
+FROM node:10.19-alpine as builder
+
+ENV PROJECT_ROOTDIR /app/
+
+WORKDIR $PROJECT_ROOTDIR
+
+COPY package.json yarn.lock $PROJECT_ROOTDIR
+
+RUN yarn install
+
+COPY . $PROJECT_ROOTDIR
+
+ENV HOST 0.0.0.0
+
+RUN yarn generate:deploy
+
+FROM nginx:1.19-alpine
+
+COPY --from=builder /app/dist /usr/share/nginx/html
+
+CMD ["nginx", "-g", "daemon off;"]

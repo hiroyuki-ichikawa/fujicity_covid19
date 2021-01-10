@@ -12,7 +12,7 @@ COPY . $PROJECT_ROOTDIR
 
 ENV HOST 0.0.0.0
 
-CMD ["yarn", "generate:deploy"]
+RUN yarn generate:deploy
 
 FROM nginx:1.19-alpine
 

@@ -28,7 +28,6 @@ import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCar
 import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
 import TestedNumberCard from '@/components/cards/TestedNumberCard.vue'
 import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDeskReportsNumberCard.vue'
-
 export default {
   components: {
     ConfirmedCasesDetailsCard,
@@ -40,6 +39,10 @@ export default {
   data() {
     let title, updatedAt
     switch (this.$route.params.card) {
+      case 'details-of-confirmed-cases':
+        title = this.$t('検査陽性者の状況')
+        updatedAt = Data.patients.date
+        break
       case 'number-of-confirmed-cases':
         title = this.$t('陽性患者数')
         updatedAt = Data.patients.date
@@ -48,7 +51,16 @@ export default {
         title = this.$t('陽性患者の属性')
         updatedAt = Data.patients.date
         break
+      case 'number-of-tested':
+        title = this.$t('検査実施件数')
+        updatedAt = Data.inspections_summary.date
+        break
+      case 'number-of-reports-to-covid19-consultation-desk':
+        title = this.$t('新型コロナ受診相談窓口相談件数')
+        updatedAt = Data.querents.date
+        break
     }
+
 
     const data = {
       title,

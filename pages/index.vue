@@ -14,14 +14,11 @@
     </div>
     <whats-new class="mb-4" :items="newsItems" />
     <v-row class="DataBlock">
-      <confirmed-cases-details-card />
       <tested-cases-details-card />
       <confirmed-cases-attributes-card />
       <confirmed-cases-number-card />
       <inspection-persons-number-card />
       <telephone-advisory-reports-number-card />
-      <consultation-desk-reports-number-card />
-      <tested-number-card />
       <metro-card />
       <agency-card />
       <shinjuku-visitors-card />

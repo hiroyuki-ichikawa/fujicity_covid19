@@ -95,10 +95,10 @@ Pull Request を送る際の branch は、以下のネーミングルールで�
 #### 基本的なブランチ
 | 目的 | ブランチ | 確認URL | 備考 |
 | ---- | -------- | ---- | ---- |
-| 開発 | development | https://stopcovid19-shizuoka-dev.netlify.com/ | base branch。基本はこちらに Pull Requestを送ってください |
-| 本番 | master | https://stopcovid19-shizuoka.netlify.com/ | 管理者以外の Pull Request は禁止です |
+| 開発 | development | https://stopcovid19-fuji-dev.netlify.com/ | base branch。基本はこちらに Pull Requestを送ってください |
+| 本番 | master | https://stopcovid19-fuji.netlify.com/ | 管理者以外の Pull Request は禁止です |
 
 #### システムで利用しているブランチ
 | 目的 | ブランチ | 確認URL | 備考 |
 | ---- | -------- | ---- | ---- |
-| 本番サイトHTML | production | https://stopcovid19-shizuoka.netlify.com/ | 静的ビルドされたHTMLが置いてある場所 |
+| 本番サイトHTML | production | https://stopcovid19-fuji.netlify.com/ | 静的ビルドされたHTMLが置いてある場所 |

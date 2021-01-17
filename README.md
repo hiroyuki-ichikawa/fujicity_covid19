@@ -1,4 +1,4 @@
-# 静岡県 新型コロナウイルス感染症対策サイト
+# 富士市 新型コロナウイルス感染症対策サイト
 
 ![](https://github.com/hiroyuki-ichikawa/covid19/blob/development/static/ogp.png)
 

@@ -2,7 +2,7 @@
   <v-app class="app">
     <v-overlay v-if="loading" color="#F8F9FA" opacity="1" z-index="9999">
       <div class="loader">
-        <img src="/logo.svg" alt="静岡県" />
+        <img src="/logo.svg" alt="富士市" />
         <scale-loader color="#00A040" />
       </div>
     </v-overlay>
@@ -98,20 +98,20 @@ export default Vue.extend({
         {
           hid: 'author',
           name: 'author',
-          content: this.$tc('静岡県')
+          content: this.$tc('富士市')
         },
         {
           hid: 'description',
           name: 'description',
           content: this.$tc(
-            '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、静岡県とCode for ふじのくにが開設したものです。'
+            '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、富士市とCode for ふじのくにが開設したものです。'
           )
         },
         {
           hid: 'og:site_name',
           property: 'og:site_name',
           content:
-            this.$t('静岡県') +
+            this.$t('富士市') +
             ' ' +
             this.$t('新型コロナウイルス感染症') +
             ' ' +
@@ -131,7 +131,7 @@ export default Vue.extend({
           hid: 'og:title',
           property: 'og:title',
           content:
-            this.$t('静岡県') +
+            this.$t('富士市') +
             ' ' +
             this.$t('新型コロナウイルス感染症') +
             ' ' +
@@ -141,7 +141,7 @@ export default Vue.extend({
           hid: 'og:description',
           property: 'og:description',
           content: this.$tc(
-            '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、静岡県が開設したものです。'
+            '当サイトは新型コロナウイルス感染症 (COVID-19) に関する最新情報を提供するために、富士市が開設したものです。'
           )
         },
         {
@@ -153,7 +153,7 @@ export default Vue.extend({
           hid: 'apple-mobile-web-app-title',
           name: 'apple-mobile-web-app-title',
           content:
-            this.$t('静岡県') +
+            this.$t('富士市') +
             ' ' +
             this.$t('新型コロナウイルス感染症') +
             ' ' +

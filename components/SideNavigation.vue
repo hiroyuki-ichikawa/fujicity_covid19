@@ -13,7 +13,7 @@
           <img
             class="SideNavigation-HeaderLogo"
             src="/logo.svg"
-            :alt="$t('静岡県')"
+            :alt="$t('富士市')"
           />
           <div class="SideNavigation-HeaderText">
             {{ $t('menu/新型コロナウイルス感染症') }}<br />{{
@@ -94,7 +94,7 @@
           </a>
           {{ $t('の下に提供されています。') }}
           <br />
-          2020 Shizuoka Pref. Government
+          2021 City of Fuji. Government
         </small>
       </footer>
     </div>
@@ -130,42 +130,21 @@ export default Vue.extend({
       return [
         {
           icon: 'mdi-chart-timeline-variant',
-          title: this.$t('県内の最新感染動向'),
+          title: this.$t('富士市内の最新感染動向'),
           link: this.localePath('/')
         },
         {
-          icon: 'CovidIcon',
-          title: this.$t('新型コロナウイルス感染症が心配なときに'),
+          title: this.$t('新型コロナウイルス感染症についての相談窓口'),
           link:
-            'https://www.pref.shizuoka.jp/kinkyu/covid-19-mosimosoudannsaki.html'
+            'https://www.city.fuji.shizuoka.jp/rn2ola000002ehpi.html'
         },
         {
-          icon: 'ParentIcon',
-          title: this.$t('お子様をお持ちの皆様へ'),
-          link: 'https://www.pref.shizuoka.jp/kinkyu/covid-19-fam.html'
+          title: this.$t('感染症対策に伴い中止・変更となったイベント一覧'),
+          link: 'https://www.city.fuji.shizuoka.jp/rn2ola000002bgje.html'
         },
         {
-          icon: 'mdi-account-multiple',
-          title: this.$t('県民の皆様へ'),
-          link: 'https://www.pref.shizuoka.jp/kinkyu/covid-19-tijikomennto.html'
-        },
-        {
-          icon: 'mdi-domain',
-          title: this.$t('企業の皆様・はたらく皆様へ'),
-          link: 'https://www.pref.shizuoka.jp/kinkyu/covid19-com.html'
-        },
-        {
-          title: this.$t('静岡県新型コロナウイルス感染症対策本部報'),
-          link:
-            'https://www.pref.shizuoka.jp/kinkyu/covid-19-taisakuhonnbu.html'
-        },
-        {
-          title: this.$t('静岡県主催イベント等の延期・中止状況'),
-          link: 'https://www.pref.shizuoka.jp/kinkyu/event.html'
-        },
-        {
-          title: this.$t('静岡県公式ホームページ'),
-          link: 'https://www.pref.shizuoka.jp/'
+          title: this.$t('富士市役所公式ホームページ'),
+          link: 'https://www.city.fuji.shizuoka.jp/'
         }
       ]
     }

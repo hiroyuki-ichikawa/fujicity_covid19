@@ -49,7 +49,7 @@
       <footer class="SideNavigation-Footer">
         <div class="SideNavigation-Social">
           <a
-            href="https://twitter.com/shizuoka_bousai"
+            href="https://twitter.com/Fujishi_jp"
             target="_blank"
             rel="noopener noreferrer"
             class="SideNavigation-SocialLink"
@@ -60,7 +60,7 @@
             </picture>
           </a>
           <a
-            href="https://www.facebook.com/shizuoka.bousai/"
+            href="https://www.facebook.com/FujiCity/"
             target="_blank"
             rel="noopener noreferrer"
             class="SideNavigation-SocialLink"
@@ -71,7 +71,7 @@
             </picture>
           </a>
           <a
-            href="https://github.com/hiroyuki-ichikawa/covid19"
+            href="https://github.com/hiroyuki-ichikawa/fujicity_covid19"
             target="_blank"
             rel="noopener noreferrer"
             class="SideNavigation-SocialLink"
@@ -134,16 +134,21 @@ export default Vue.extend({
           link: this.localePath('/')
         },
         {
+          title: this.$t('富士市新型コロナウイルス関連情報'),
+          link:
+            'https://www.city.fuji.shizuoka.jp/covid19.html'
+        },
+        {
           title: this.$t('新型コロナウイルス感染症についての相談窓口'),
           link:
             'https://www.city.fuji.shizuoka.jp/rn2ola000002ehpi.html'
         },
         {
-          title: this.$t('感染症対策に伴い中止・変更となったイベント一覧'),
-          link: 'https://www.city.fuji.shizuoka.jp/rn2ola000002bgje.html'
+          title: this.$t('静岡県内の最新感染動向'),
+          link: 'https://stopcovid19.code4numazu.org/'
         },
         {
-          title: this.$t('富士市役所公式ホームページ'),
+          title: this.$t('富士市ウェブサイト'),
           link: 'https://www.city.fuji.shizuoka.jp/'
         }
       ]

@@ -162,7 +162,7 @@ export default Vue.extend({
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: this.$tc('https://stopcovid19.code4numazu.org/ogp.png')
+          content: this.$tc('https://stopcovid19-fuji.netlify.app/ogp.png')
         }
       ]
     }

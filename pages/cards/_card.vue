@@ -61,7 +61,6 @@ export default {
         break
     }
 
-
     const data = {
       title,
       updatedAt
@@ -69,7 +68,7 @@ export default {
     return data
   },
   head() {
-    const url = 'https://stopcovid19.code4numazu.org/'
+    const url = 'https://stopcovid19-fuji.netlify.app/'
     const timestamp = new Date().getTime()
     const ogpImage =
       this.$i18n.locale === 'ja'

@@ -87,7 +87,7 @@ export default Vue.extend({
       link: [
         {
           rel: 'canonical',
-          href: `https://stopcovid19-shizuoka-dev.netlify.com${this.$route.path}`
+          href: `https://stopcovid19-fuji-dev.netlify.app${this.$route.path}`
         },
         {
           rel: 'stylesheet',

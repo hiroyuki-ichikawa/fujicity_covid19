@@ -2,7 +2,7 @@
   <div v-if="isDevelopmentMode" class="DevelopmentModeMark">
     開発中（development mode）
     <a
-      href="https://stopcovid19.code4numazu.org/"
+      href="https://stopcovid19-fuji.netlify.app/"
       target="_blank"
       rel="noopener noreferrer"
     >

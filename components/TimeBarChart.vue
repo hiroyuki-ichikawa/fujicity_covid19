@@ -181,7 +181,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
     },
     displayInfo() {
       const lastData = this.chartData.slice(-1)[0]
-      const formattedLastDate = this.$d(new Date(lastData.label), 'date')      
+      const formattedLastDate = this.$d(new Date(lastData.label), 'date')
       if (this.dataKind === 'transition') {
         return {
           lText: `${lastData.transition.toLocaleString()}`,

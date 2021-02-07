@@ -180,26 +180,22 @@ const options: ThisTypedComponentOptionsWithRecordProps<
       return this.formatDayBeforeRatio(lastDay - lastDayBefore)
     },
     displayInfo() {
+      const lastData = this.chartData.slice(-1)[0]
+      const formattedLastDate = this.$d(new Date(lastData.label), 'date')
       if (this.dataKind === 'transition') {
         return {
-          lText: `${this.chartData.slice(-1)[0].transition.toLocaleString()}`,
-          sText: `${this.chartData.slice(-1)[0].label} ${this.$t(
-            '実績値'
-          )}（${this.$t('前日比')}: ${this.displayTransitionRatio} ${
-            this.unit
-          }）`,
+          lText: `${lastData.transition.toLocaleString()}`,
+          sText: `${formattedLastDate} ${this.$t('実績値')}（${this.$t(
+            '前日比'
+          )}: ${this.displayTransitionRatio} ${this.unit}）`,
           unit: this.unit
         }
       }
       return {
-        lText: this.chartData[
-          this.chartData.length - 1
-        ].cumulative.toLocaleString(),
-        sText: `${this.chartData.slice(-1)[0].label} ${this.$t(
-          '累計値'
-        )}（${this.$t('前日比')}: ${this.displayCumulativeRatio} ${
-          this.unit
-        }）`,
+        lText: lastData.cumulative.toLocaleString(),
+        sText: `${formattedLastDate} ${this.$t('累計値')}（${this.$t(
+          '前日比'
+        )}: ${this.displayCumulativeRatio} ${this.unit}）`,
         unit: this.unit
       }
     },
@@ -236,6 +232,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
       }
     },
     displayOption() {
+      const self = this
       const unit = this.unit
       const scaledTicksYAxisMax = this.scaledTicksYAxisMax
       const options: Chart.ChartOptions = {
@@ -249,7 +246,8 @@ const options: ThisTypedComponentOptionsWithRecordProps<
               return labelText
             },
             title(tooltipItem, data) {
-              return data.labels![tooltipItem[0].index!] as string[]
+              const label = data.labels![tooltipItem[0].index!] as string
+              return self.$d(new Date(label), 'date')
             }
           }
         },
@@ -272,7 +270,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
                 fontColor: '#808080',
                 maxRotation: 0,
                 callback: (label: string) => {
-                  return label.split('/')[1]
+                  return String(Number(label.split('-')[2]))
                 }
               }
               // #2384: If you set "type" to "time", make sure that the bars at both ends are not hidden.
@@ -296,9 +294,9 @@ const options: ThisTypedComponentOptionsWithRecordProps<
               type: 'time',
               time: {
                 unit: 'month',
-                parser: 'M/D',
+                parser: 'Y/M/D',
                 displayFormats: {
-                  month: 'MMM'
+                  month: 'YYYY-MM'
                 }
               }
             }
@@ -373,7 +371,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
                 maxRotation: 0,
                 minRotation: 0,
                 callback: (label: string) => {
-                  return label.split('/')[1]
+                  return String(Number(label.split('-')[2]))
                 }
               }
             },
@@ -391,28 +389,13 @@ const options: ThisTypedComponentOptionsWithRecordProps<
                 fontColor: 'transparent', // #808080
                 padding: 13, // 3 + 10(tickMarkLength)
                 fontStyle: 'bold',
-                callback: (label: string) => {
-                  const monthStringArry = [
-                    'Jan',
-                    'Feb',
-                    'Mar',
-                    'Apr',
-                    'May',
-                    'Jun',
-                    'Jul',
-                    'Aug',
-                    'Sep',
-                    'Oct',
-                    'Nov',
-                    'Dec'
-                  ]
-                  const month = monthStringArry.indexOf(label.split(' ')[0]) + 1
-                  return month + '月'
-                }
               },
               type: 'time',
               time: {
-                unit: 'month'
+                unit: 'month',
+                displayFormats: {
+                  month: 'YYYY-MM'
+                }
               }
             }
           ],

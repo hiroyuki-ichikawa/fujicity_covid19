@@ -1,5 +1,7 @@
+import { convertDateToISO8601Format } from '@/utils/formatDate'
+
 type DataType = {
-  日付: Date
+  日付: string
   小計: number
 }
 
@@ -26,7 +28,7 @@ export default (data: DataType[]) => {
       if (!isNaN(subTotal)) {
         patSum += subTotal
         graphData.push({
-          label: `${date.getMonth() + 1}/${date.getDate()}`,
+          label: convertDateToISO8601Format(d['日付']),
           transition: subTotal,
           cumulative: patSum
         })

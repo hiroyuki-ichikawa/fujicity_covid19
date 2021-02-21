@@ -1,7 +1,7 @@
 ﻿{
   "新型コロナウイルス感染症が心配なときに": "If you feel concerned about COVID-19",
+  "静岡県内の最新感染動向": "Latest updates on COVID-19 in Shizuoka",
   "富士市内の最新感染動向": "Latest updates on COVID-19 in City of Fuji",
-  "市内の最新感染動向": "Latest updates on COVID-19 in City of Fuji",
   "検査陽性者の状況": "Details of people testing positive",
   "陽性患者数": "Number of confirmed cases",
   "陽性患者の属性": "Details of patients testing positive",
@@ -193,5 +193,8 @@
   "県東部": "East part of the prefecture",
   "県西部": "West part of the prefecture",
   "県中部": "Central part of the prefecture",
-  "本ページの数値は、公表済みの数値をベースとしているため、実際の入院患者数等とは異なる場合があります": "Figures on this page are based on published figures and may differ from actual inpatient numbers"
+  "本ページの数値は、公表済みの数値をベースとしているため、実際の入院患者数等とは異なる場合があります": "Figures on this page are based on published figures and may differ from actual inpatient numbers",
+  "富士市新型コロナウイルス関連情報": "Information related to COVID19 in Fuji City",
+  "新型コロナウイルス感染症についての相談窓口": "Consultation service for COVID-19",
+  "富士市ウェブサイト": "Fuji City website"
 }

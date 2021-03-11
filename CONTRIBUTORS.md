@@ -10,6 +10,10 @@ Shizuoka Covid-19 response site contributors
 | Nozomi Ichikawa (Code for ふじのくに) | [@IchikawaNozomi](https://github.com/IchikawaNozomi) | | |
 | pikkarin | [@raokiey](https://github.com/raokiey) | | |
 | hiroshi sano | [@hrsano645](https://github.com/hrsano645) | | |
+| jandknagaya | [@jandknagaya](https://github.com/jandknagaya) | | |
+| Jyury11 | [@Jyury11](https://github.com/Jyury11) | | |
+
+- [Contributors to hiroyuki-ichikawa/fujicity_covid19](https://github.com/hiroyuki-ichikawa/fujicity_covid19/graphs/contributors)
 
 なお、本サイトのベースとなった[東京都新型コロナウイルス対策サイト](https://stopcovid19.metro.tokyo.lg.jp/)の構築にご協力いただいた皆様は下記をご参照下さい。
 

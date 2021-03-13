@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
+      - name: setup eslint
+        run: npm install --legacy-peer-deps
       - name: eslint review
         uses: reviewdog/action-eslint@v1
         with:

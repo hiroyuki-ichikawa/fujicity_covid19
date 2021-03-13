@@ -20,7 +20,7 @@
       <template v-slot:body="{ items }">
         <tbody>
           <tr v-for="item in items" :key="item.text">
-            <th class="text-start">{{ item['公表日'] }}</th>
+            <th class="text-start">{{ translateDate(item['公表日']) }}</th>
             <td class="text-start">{{ item['居住地'] }}</td>
             <td class="text-start">{{ item['年代'] }}</td>
             <td class="text-start">{{ item['性別'] }}</td>
@@ -143,6 +143,7 @@
 </style>
 
 <script lang="ts">
+import dayjs from 'dayjs'
 import Vue from 'vue'
 import DataView from '@/components/DataView.vue'
 import DataViewBasicInfoPanel from '@/components/DataViewBasicInfoPanel.vue'
@@ -205,6 +206,13 @@ export default Vue.extend({
     tables.forEach((table: HTMLElement) => {
       table.setAttribute('tabindex', '0')
     })
+  },
+  methods: {
+    translateDate(date: string) {
+      const day = dayjs(date)
+      if (!day.isValid()) return date
+      return this.$d(day.toDate(), 'date')
+    }
   }
 })
 </script>

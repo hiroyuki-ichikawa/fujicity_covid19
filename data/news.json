@@ -1,24 +1,34 @@
 {
     "newsItems": [
         {
-            "date": "2021/8/24",
-            "url": "https://www.city.fuji.shizuoka.jp/kyouiku/c0206/rn2ola000002r4bo.html",
-            "text": "市内小・中学校の夏季休業延長と時差式分散登校を行います "
-        },
-        {
-            "date": "2021/8/24",
-            "url": "https://www.city.fuji.shizuoka.jp/sangyo/c0407/rn2ola000003bq5v.html",
-            "text": "緊急事態措置に伴う休業要請・営業時間の短縮等について（事業者等への要請） "
-        },
-        {
-            "date": "2021/8/24",
+            "date": "2021/8/30",
             "url": "https://www.city.fuji.shizuoka.jp/kenkou/c0107/rn2ola000002xgyo.html",
             "text": "新型コロナウイルスワクチン接種について"
         },
         {
-            "date": "2021/8/23",
-            "url": "https://www.city.fuji.shizuoka.jp/0820.html",
-            "text": "小長井義正市長から市民の皆様へ（8月20日）"
+            "date": "2021/8/30",
+            "url": "https://www.city.fuji.shizuoka.jp/0830.html",
+            "text": "小長井義正市長から市民の皆様へ（8月30日）"
+        },
+        {
+            "date": "2021/8/26",
+            "url": "https://www.city.fuji.shizuoka.jp/rn2ola000002tzcf.html",
+            "text": "新型コロナウイルス感染の可能性がある人へ"
+        },
+        {
+            "date": "2021/8/26",
+            "url": "https://www.city.fuji.shizuoka.jp/kyouiku/c0206/rn2ola000002r4bo.html",
+            "text": "市内小・中学校の夏季休業延長と時差式分散登校を行います"
+        },
+        {
+            "date": "2021/8/25",
+            "url": "https://www.city.fuji.shizuoka.jp/kenkou/c0203/rn2ola000002ijb3.html",
+            "text": "緊急事態宣言下における幼稚園・保育園等の対応について"
+        },
+        {
+            "date": "2021/8/24",
+            "url": "https://www.city.fuji.shizuoka.jp/sangyo/c0407/rn2ola000003bq5v.html",
+            "text": "緊急事態措置に伴う休業要請・営業時間の短縮等について（事業者等への要請）"
         }
     ]
 }

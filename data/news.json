@@ -1,19 +1,9 @@
 {
     "newsItems": [
         {
-            "date": "2022/8/12",
-            "url": "https://www.city.fuji.shizuoka.jp/040812.html",
-            "text": "小長井義正市長から市民の皆様へ（8月12日）"
-        },
-        {
-            "date": "2022/8/10",
-            "url": "https://www.city.fuji.shizuoka.jp/kenkou/c0101/rn2ola0000043vqj.html",
-            "text": "【要電子申請】新型コロナ検査キットを有症状者に配布します"
-        },
-        {
-            "date": "2022/7/25",
-            "url": "https://www.city.fuji.shizuoka.jp/kenkou/c0101/rn2ola000003c6uv.html",
-            "text": "富士市新型コロナ一般電話相談窓口について"
+            "date": "2022/10/1",
+            "url": "https://www.city.fuji.shizuoka.jp/covid19.html",
+            "text": "新型コロナウイルス感染症（COVID-19）に関する情報"
         }
     ]
 }

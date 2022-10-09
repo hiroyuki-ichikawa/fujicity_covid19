@@ -125,6 +125,13 @@ export default Vue.extend({
         color: $gray-1;
       }
 
+      &-warning-large {
+        flex: 0 1 auto;
+        padding-left: 8px;
+        color: $red-1;
+        font-size: 18px;
+      }
+
       &-warning {
         flex: 0 1 auto;
         padding-left: 8px;

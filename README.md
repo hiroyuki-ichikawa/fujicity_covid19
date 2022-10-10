@@ -1,6 +1,6 @@
 # 富士市 新型コロナウイルス感染症対策サイト
 
-![](https://github.com/hiroyuki-ichikawa/covid19/blob/development/static/ogp.png)
+![](https://github.com/hiroyuki-ichikawa/fujicity_covid19/blob/development/static/ogp.png)
 
 ## 貢献の仕方
 Issues にあるいろいろな修正にご協力いただけると嬉しいです。

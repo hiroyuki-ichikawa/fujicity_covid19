@@ -40,7 +40,7 @@ for lang in ("ja", "en", "zh-cn", "zh-tw", "ko", "ja-basic"):
                 path if lang == "ja" else "/{}{}".format(lang, path)
             )
         )
-        path = path.replace("/cards/", "").replace("/", "_")
+        path = path.replace("/cards/", "").replace("/?", "_")
         if ('heatmap' in path):
             time.sleep(20)
         driver.save_screenshot(

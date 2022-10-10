@@ -8,6 +8,15 @@
     </h3>
     <ul class="WhatsNew-list">
       <li class="WhatsNew-list-item WhatsNew-list-item-message">
+        <span class="WhatsNew-list-item-message-warning-large">
+          {{
+            $t(
+              '発生届の対象が限定されたことに伴い、このページの更新は９月２６日（月）で終了しました。'
+            )
+          }}
+        </span>
+      </li>
+      <li class="WhatsNew-list-item WhatsNew-list-item-message">
         <span class="WhatsNew-list-item-message-warning">
           {{
             $t(
@@ -114,6 +123,13 @@ export default Vue.extend({
         }
 
         color: $gray-1;
+      }
+
+      &-warning-large {
+        flex: 0 1 auto;
+        padding-left: 8px;
+        color: $red-1;
+        font-size: 18px;
       }
 
       &-warning {

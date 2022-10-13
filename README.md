@@ -1,3 +1,9 @@
+# プロジェクト終了のお知らせ
+
+発生届の対象が限定されたことに伴い、対策サイトの更新は2022年9月26日（月）で終了しました。
+
+詳しくはこちらを参照ください -> https://github.com/hiroyuki-ichikawa/fujicity_covid19/issues/49
+
 # 富士市 新型コロナウイルス感染症対策サイト
 
 ![](https://github.com/hiroyuki-ichikawa/fujicity_covid19/blob/development/static/ogp.png)
